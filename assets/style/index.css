@@ -1,3 +1,25 @@
 @charset 'utf-8'; 
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+body{
+    font-family: 'Nunito-sans', Arial, sans-serif;
+    background-color: #f2f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: ;
+}
+
+#map {
+    position: relative;   
+}
+/* #map { position: absolute; top: 0; bottom: 0; width: 100%; } */
