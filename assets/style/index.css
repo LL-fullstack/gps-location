@@ -5,21 +5,207 @@ body{
     background-color: #f2f3f4;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*................................................................. */
+/* Header                                                           */
+/*................................................................. */
 
 .header-section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin-top: 20px;
+    gap: 600px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
-    color: ;
+    color: #1e90ff;
 }
 
-#map {
-    position: relative;   
+ul {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
 }
-/* #map { position: absolute; top: 0; bottom: 0; width: 100%; } */
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff8d1e;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8d1eff;
+}
+
+/*................................................................. */
+/* Banner                                                           */
+/*................................................................. */
+
+.banner-section {
+    /* margin-top: 20px; */
+    /* width: 600px; */
+   
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    /* position: absolute;
+    top: 25%;
+    left: 30%;  */
+    gap: 20px;
+}
+
+.hero-banner {
+    background: url("../media/banner.jpg") center/ cover no-repeat;
+    width: 100%;
+    height: 40svh;  
+}
+
+.banner-text {
+    text-align: center;
+    width: 100%;
+    height: 100svh;
+
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1e90ff;
+}
+
+p {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*................................................................. */
+/* Tracker                                                          */
+/*................................................................. */
+
+.tracking-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tracker {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*................................................................. */
+/* Map                                                              */
+/*................................................................. */
+
+#map { 
+    position: absolute; 
+    top: 50%; 
+    left: 5%;
+    bottom: 0; 
+    width: 90%; 
+    margin-bottom: 20px;
+}
+
+/*................................................................. */
+/* Footer                                                           */
+/*................................................................. */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 900px;
+    background-color: #ededed;
+}
+
+.footer-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.social-icons i:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+    color: black;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    color: #000;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
