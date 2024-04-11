@@ -13,8 +13,11 @@ User Interaction: Includes a button that allows users to manually trigger locati
 **Technologies Used:**
 
 HTML
+
 CSS
+
 JavaScript
+
 Mapbox API
 
 **Credits:**
