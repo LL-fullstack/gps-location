@@ -88,18 +88,18 @@ button:hover {
 }
 
 .banner-section h2 {
-    top: 40%;
+    top: 30%;
     left: 50%; 
-    transform: translate(-50%, -40%); 
+    transform: translate(-50%, -30%); 
     position: absolute; 
     width: 600px;
     color: #fff;
 }
 
 .banner-section p {
-    top: 65%;
+    top: 50%;
     left: 50%; 
-    transform: translate(-50%, -65%); 
+    transform: translate(-50%, -50%); 
     position: absolute; 
     width: 600px;
     color: #fff;
@@ -116,6 +116,16 @@ p {
     color: black;
     font-weight: 500;
     font-size: 16px;
+}
+
+.order-btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 68%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
 
 /*................................................................. */
