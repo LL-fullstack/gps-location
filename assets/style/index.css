@@ -23,8 +23,9 @@ body{
 .header-section {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     gap: 600px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -46,6 +47,10 @@ a {
     font-size: 16px;
 }
 
+a:hover {
+    color: #8d1eff;
+}
+
 button {
     background-color: #ff8d1e;
     padding: 5px 20px;
@@ -62,32 +67,46 @@ button:hover {
 /*................................................................. */
 
 .banner-section {
-    /* margin-top: 20px; */
-    /* width: 600px; */
-   
-    display: flex;
-    flex-direction: column;
-    height: 100svh;
-    /* position: absolute;
-    top: 25%;
-    left: 30%;  */
-    gap: 20px;
-}
-
-.hero-banner {
     background: url("../media/banner.jpg") center/ cover no-repeat;
     width: 100%;
-    height: 40svh;  
+    height: 0;  
+    padding-top: 40%;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.banner-text {
-    text-align: center;
+.banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100svh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
 
+.banner-section h2 {
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -40%); 
+    position: absolute; 
+    width: 600px;
+    color: #fff;
+}
+
+.banner-section p {
+    top: 65%;
+    left: 50%; 
+    transform: translate(-50%, -65%); 
+    position: absolute; 
+    width: 600px;
+    color: #fff;
 }
 
 h2 {
+    top: 35%;
     font-size: 36px;
     font-weight: 600;
     color: #1e90ff;
@@ -111,23 +130,32 @@ p {
     gap: 20px;
 }
 
+.tracking-section h2 {
+    font-size: 32px;
+}
+
 .tracker {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 /*................................................................. */
 /* Map                                                              */
 /*................................................................. */
 
-#map { 
-    position: absolute; 
-    top: 50%; 
-    left: 5%;
-    bottom: 0; 
-    width: 90%; 
-    margin-bottom: 20px;
+#map-section {
+    position: relative;
+    height: 60svh;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+#map {
+    position: relative;
+    height: inherit;
+    width: inherit;
 }
 
 /*................................................................. */
@@ -138,7 +166,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 900px;
     background-color: #ededed;
 }
 
@@ -152,7 +179,7 @@ footer {
 
 .social-icons {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: #000;
 }
 
@@ -204,8 +231,10 @@ footer i {
 }
 
 .copyright {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
+    color: #000;
 }
+
